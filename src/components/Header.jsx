@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import Rosa from "../images/rosa.png";
 function Header() {
   return (
@@ -14,15 +14,13 @@ function Header() {
           class=" text-slate-100
      py-5"
         >
-          <ul class="flex justify-center space-x-32">
+          <ul className="flex justify-center space-x-4 sm:space-x-8 md:space-x-12 lg:space-x-16 xl:space-x-32">
             <li>
-              <a href="#" class=" font-medium">
-                Nature
-              </a>
+              <Link to="">Nature</Link>
             </li>
 
             <li>
-              <a href="#" class=" font-medium">
+              <a href="Cars" class=" font-medium">
                 Cars
               </a>
             </li>
