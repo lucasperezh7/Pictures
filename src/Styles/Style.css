@@ -1,0 +1,36 @@
+
+#Nature {
+  column-count: 4;
+}
+
+@media screen and (max-width: 700px) {
+  #Nature {
+    column-count: 3;
+    /* Otras propiedades CSS aquí si es necesario */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #Nature {
+    column-count: 2;
+    /* Otras propiedades CSS aquí si es necesario */
+  }
+}
+
+#Cars {
+  column-count: 4;
+}
+
+@media screen and (max-width: 700px) {
+  #Cars {
+    column-count: 3;
+    /* Otras propiedades CSS aquí si es necesario */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #Cars {
+    column-count: 2;
+    /* Otras propiedades CSS aquí si es necesario */
+  }
+}
