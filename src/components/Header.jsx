@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Rosa from "../images/rosa.png";
 function Header() {
   return (
@@ -15,12 +14,20 @@ function Header() {
      py-5"
         >
           <ul className="flex justify-center space-x-4 sm:space-x-8 md:space-x-12 lg:space-x-16 xl:space-x-32">
-            <li>
-              <Link to="">Nature</Link>
-            </li>
+            <a
+              href="#NaturePage"
+              onClick={scrollToElement}
+              className=" font-medium"
+            >
+              <li>Nature</li>
+            </a>
 
             <li>
-              <a href="Cars" class=" font-medium">
+              <a
+                href="#CarsPage"
+                onClick={scrollToElement}
+                className=" font-medium"
+              >
                 Cars
               </a>
             </li>
@@ -45,5 +52,16 @@ function Header() {
     </header>
   );
 }
+const scrollToElement = (e) => {
+  e.preventDefault();
+  const targetId = e.target.getAttribute("href").substring(1);
+  const targetElement = document.getElementById(targetId);
 
+  if (targetElement) {
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: "smooth",
+    });
+  }
+};
 export default Header;
