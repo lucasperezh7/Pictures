@@ -32,8 +32,12 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="#" class="font-medium">
-                Colabs
+              <a
+                href="#SportsPage"
+                onClick={scrollToElement}
+                class="font-medium"
+              >
+                Sports
               </a>
             </li>
             <li>

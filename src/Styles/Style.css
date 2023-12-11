@@ -34,3 +34,49 @@
     /* Otras propiedades CSS aquí si es necesario */
   }
 }
+
+#Sports {
+  column-count: 4;
+}
+
+@media screen and (max-width: 700px) {
+  #Sports {
+    column-count: 3;
+    /* Otras propiedades CSS aquí si es necesario */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #Sports {
+    column-count: 2;
+    /* Otras propiedades CSS aquí si es necesario */
+  }
+}
+
+/* BotonSubir.css */
+.boton-subir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  opacity: 0;  /* Inicialmente oculto */
+  transition: opacity 0.3s ease-in-out;  /* Transición de opacidad */
+}
+
+.boton-subir.visible {
+  opacity: 1;  /* Visible cuando mostrarBoton es true */
+}
+
+.boton-subir img {
+  width: 80px; /* Ajusta el tamaño según tus preferencias */
+  height: auto; /* Mantén la proporción original */
+  margin-right: 5px; /* Ajusta el espacio entre el texto y la imagen */
+  
+}
